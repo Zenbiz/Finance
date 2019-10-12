@@ -1,5 +1,15 @@
 def npv(beta, riskfree, riskmarket):
-  
+	"""
+	Basic function to calculate the net present value 
+	*Note* only currently works for identical cash flows 
+
+	Beta:
+	Risk Free: 
+	Risk Market: 
+
+	How to calculate the Net Present Value(NPV):
+	rProject = rF + ß(E[rm] - rf)
+	"""
 	# Ask the user for cash flows:
 	years = int(input("How many years in the project (starting index 0): "))
 	num_years = []
@@ -22,3 +32,4 @@ def npv(beta, riskfree, riskmarket):
 	# Step 3 NPV Calculation
 	npv = float(inital_cfoutlay) + ((float(cashflow) * float(annuity_factor)))
 	print((str(round(npv, 4))) + '%')
+npv(2, .03, .1)
