@@ -45,3 +45,16 @@ def portHPR_Stdev():
 	# NEED TO ADD: harmonic _mean() for python 3.8
 	stddev = '{0:.2%}'.format((statistics.stdev(returns)))
 	print("The standard deviation is: " + str(stddev))  
+
+	
+"""
+	# Iterate through a dictionary  
+	
+	# Create a list 
+	dictionary = dict(zip(num_years, returns))
+	print(dictionary)	
+
+	# Combine the 2 list into a dictionary 
+	for key, value in dictionary.items():
+		print(key, value)
+"""
